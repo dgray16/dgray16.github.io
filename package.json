@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-demo",
+  "version": "0.1.0",
+  "description": "A Bootstrap Vite demo",
+  "homepage": "https://github.com/dgray16/dgray16.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/dgray16/dgray16.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgray16/dgray16.github.io.git"
+  },
+  "license": "ISC",
+  "author": "Dgray16",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "vite": "7.0.4"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.7",
+    "sass": "1.89.2"
+  }
+}
