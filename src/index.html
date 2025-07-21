@@ -5,11 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <script type="module" src="./js/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/airplane-fill.svg">
 </head>
+
 <body>
-<div class="container py-4 px-3 mx-auto">
-    <h1>Hello, Bootstrap and Vite!</h1>
-    <button class="btn btn-primary">Primary button</button>
-</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">Global Journeys</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#tours">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="jumbotron jumbotron-fluid bg-light text-dark text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Explore the World with Global Journeys</h1>
+        <p class="lead">Your trusted partner for unforgettable travel experiences.</p>
+    </div>
+</header>
+
+<!-- Tours Section -->
+<section id="tours" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our tours</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Tour Card 1 -->
+            <div class="col">
+                <div class="card h-90 shadow-sm rounded-3">
+                    <img src="img/paris.svg" class="card-img-top" alt="Paris Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Romantic Paris Getaway</h5>
+                        <p class="card-text">Experience the magic of Paris, from the Eiffel Tower to charming cafes.</p>
+                        <span class="badge bg-info text-dark mb-2">Europe</span>
+                        <p class="card-text"><strong>$1,500</strong> <small class="text-muted">/ person</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour Card 2 -->
+            <div class="col">
+                <div class="card h-90 shadow-sm rounded-3">
+                    <img src="img/tokyo.svg" class="card-img-top" alt="Tokyo Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Vibrant Tokyo Adventure</h5>
+                        <p class="card-text">Dive into the bustling streets and rich culture of Tokyo.</p>
+                        <span class="badge bg-info text-dark mb-2">Asia</span>
+                        <p class="card-text"><strong>$2,200</strong> <small class="text-muted">/ person</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour Card 3 -->
+            <div class="col">
+                <div class="card h-90 shadow-sm rounded-3">
+                    <img src="img/safari.svg" class="card-img-top" alt="African Safari">
+                    <div class="card-body">
+                        <h5 class="card-title">African Wildlife Safari</h5>
+                        <p class="card-text">An unforgettable journey through the heart of the African savanna.</p>
+                        <span class="badge bg-info text-dark mb-2">Africa</span>
+                        <p class="card-text"><strong>$3,000</strong> <small class="text-muted">/ person</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Global Journeys</h2>
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+                <p>Global Journeys has been curating exceptional travel experiences for over a decade. Our passion is to
+                    help you discover the world's most breathtaking destinations and create memories that last a
+                    lifetime. We pride ourselves on personalized service, expert guides, and meticulously planned
+                    itineraries.</p>
+                <p>Whether you're seeking adventure, relaxation, or cultural immersion, we have a tour that's perfect
+                    for you. Join us and embark on your next grand adventure!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="btn-group">
+                    <a type="button" class="btn btn-outline-secondary" href="https://facebook.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                        </svg>
+                        <span class="visually-hidden">Button</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        &copy;
+        <span id="copyright">
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+    </span>
+        Global Journeys. All rights reserved.
+    </div>
+</footer>
+
 </body>
 </html>
